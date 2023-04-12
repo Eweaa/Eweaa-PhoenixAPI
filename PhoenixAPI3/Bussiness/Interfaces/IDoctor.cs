@@ -1,6 +1,6 @@
 ﻿using PhoenixAPI3.Models;
 
-namespace PhoenixAPI3.Interfaces;
+namespace PhoenixAPI3.Bussiness.Interfaces;
 public interface IDoctorRepo
 {
     ICollection<AppUser> GetDoctors();

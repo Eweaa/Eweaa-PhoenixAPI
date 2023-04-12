@@ -1,10 +1,10 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using PhoenixAPI3.Bussiness.Interfaces;
 using PhoenixAPI3.Data;
-using PhoenixAPI3.Interfaces;
 using PhoenixAPI3.Models;
 using PhoenixAPI3.ViewModels;
 
-namespace PhoenixAPI3.Repos;
+namespace PhoenixAPI3.Bussiness.Repos;
 public class AppointmentRepo : IAppointmentRepo
 {
     private readonly DataContext _context;

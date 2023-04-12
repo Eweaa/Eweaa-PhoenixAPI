@@ -1,11 +1,11 @@
 ﻿using System.ComponentModel.DataAnnotations.Schema;
 using static Microsoft.EntityFrameworkCore.DbLoggerCategory.Database;
 
-namespace PhoenixAPI3.Models
+namespace PhoenixAPI3.Data.Models
 {
     public class AppUser
     {
-     
+
         public long Id { get; set; }
         public string Name { get; set; }
         public string Password { get; set; }

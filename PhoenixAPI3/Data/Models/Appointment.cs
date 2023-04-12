@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations.Schema;
 
-namespace PhoenixAPI3.Models
+namespace PhoenixAPI3.Data.Models
 {
     public class Appointment
     {

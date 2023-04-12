@@ -1,7 +1,7 @@
 ﻿using PhoenixAPI3.Models;
 using PhoenixAPI3.ViewModels;
 
-namespace PhoenixAPI3.Interfaces;
+namespace PhoenixAPI3.Bussiness.Interfaces;
 public interface IAppointmentRepo
 {
     ICollection<DoctorAppointmentVM> GetAllAppointmentsByDoctorId(int Id);
