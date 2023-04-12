@@ -77,6 +77,8 @@ builder.Services.AddTransient<Seed>();
 builder.Services.AddScoped<IPatientRepo, PatientRepo>();
 builder.Services.AddScoped<IDoctorRepo, DoctorRepo>();
 builder.Services.AddScoped<IAppointmentRepo, AppointmentRepo>();
+builder.Services.AddScoped<ISecuirtyRepo, SecuirtyRepo>();
+
 
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();

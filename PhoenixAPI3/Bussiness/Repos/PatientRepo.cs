@@ -4,7 +4,6 @@ using PhoenixAPI3.Data;
 using PhoenixAPI3.Data.Models;
 
 namespace PhoenixAPI3.Business.Repos;
-
 public class PatientRepo : IPatientRepo
 {
     private readonly DataContext _context;
