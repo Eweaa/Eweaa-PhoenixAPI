@@ -1,13 +1,12 @@
 ﻿using PhoenixAPI3.Models;
 
-namespace PhoenixAPI3.Interfaces
+namespace PhoenixAPI3.Interfaces;
+public interface IDoctorRepo
 {
-    public interface IDoctor
-    {
-        ICollection<Doctor> GetDoctors();
-        Doctor GetDoctor(int Id);
-        bool DoctorExists(int Id);
-        bool CreateDoctor(Doctor Doctor);
-        bool Save();
-    }
+    ICollection<AppUser> GetDoctors();
+    AppUser GetDoctor(int Id);
+    bool DoctorExists(int Id);
+    bool CreateDoctor(AppUser Doctor);
+    bool Save();
 }
+

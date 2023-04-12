@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Eweaa\\source\\repos\\PhoenixAPI3\\PhoenixAPI3\\PhoenixAPI3.csproj": {}
+    "D:\\Khaled\\Projects\\Eweaa-PhoenixAPI\\PhoenixAPI3\\PhoenixAPI3.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Eweaa\\source\\repos\\PhoenixAPI3\\PhoenixAPI3\\PhoenixAPI3.csproj": {
+    "D:\\Khaled\\Projects\\Eweaa-PhoenixAPI\\PhoenixAPI3\\PhoenixAPI3.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Eweaa\\source\\repos\\PhoenixAPI3\\PhoenixAPI3\\PhoenixAPI3.csproj",
+        "projectUniqueName": "D:\\Khaled\\Projects\\Eweaa-PhoenixAPI\\PhoenixAPI3\\PhoenixAPI3.csproj",
         "projectName": "PhoenixAPI3",
-        "projectPath": "C:\\Users\\Eweaa\\source\\repos\\PhoenixAPI3\\PhoenixAPI3\\PhoenixAPI3.csproj",
-        "packagesPath": "C:\\Users\\Eweaa\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Eweaa\\source\\repos\\PhoenixAPI3\\PhoenixAPI3\\obj\\",
+        "projectPath": "D:\\Khaled\\Projects\\Eweaa-PhoenixAPI\\PhoenixAPI3\\PhoenixAPI3.csproj",
+        "packagesPath": "C:\\Users\\Khaled Oweas\\.nuget\\packages\\",
+        "outputPath": "D:\\Khaled\\Projects\\Eweaa-PhoenixAPI\\PhoenixAPI3\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Eweaa\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Khaled Oweas\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -22,6 +22,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Users\\Public\\Documents\\Infragistics\\NuGet\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -92,7 +93,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.201\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
         }
       }
     }

@@ -12,92 +12,123 @@ namespace PhoenixAPI3
         }
         public void SeedDataContext()
         {
-            if (!dataContext.Patients.Any()) {
-                var patients = new List<Patient>()
+            if (!dataContext.AppUsers.Any())
+            {
+                var patients = new List<AppUser>()
                 {
-                    new Patient()
+                    new AppUser()
                     {
                         Name = "Ahmed",
                         Email = "Ahmed@yahoo.com",
                         Bio = "Lorem Ipsum",
-                        Gender = true,
+                        Gender = UserGender.Male,
                         PhoneNumber = "0123456789",
                         Location = "cairo",
-                        Role = true,
+                        UserType = UserType.Patient,
+                        Password ="Password",
                     },
-                    new Patient()
+                    new AppUser()
                     {
                         Name = "Mohamed",
                         Email = "Mohamed@yahoo.com",
                         Bio = "Lorem Ipsum",
-                        Gender = true,
+                        Gender = UserGender.Male,
                         PhoneNumber = "0123456789",
                         Location = "cairo",
-                        Role = true
+                        UserType = UserType.Patient,
+                         Password ="Password",
                     },
-                    new Patient()
+                    new AppUser()
                     {
                         Name = "sara",
                         Email = "sara@yahoo.com",
                         Bio = "Lorem Ipsum",
-                        Gender = false,
+                        Gender = UserGender.Female,
                         PhoneNumber = "0123456789",
                         Location = "cairo",
-                        Role = true
+                        UserType = UserType.Patient,
+                         Password ="Password",
                     },
-                    new Patient()
+                    new AppUser()
                     {
                         Name = "salma",
                         Email = "salma@yahoo.com",
                         Bio = "Lorem Ipsum",
-                        Gender = false,
+                        Gender = UserGender.Female,
                         PhoneNumber = "0123456789",
                         Location = "Aswan",
-                        Role = true
+                        UserType = UserType.Patient,
+                         Password ="Password",
+                    },
+                      new AppUser()
+                    {
+                        Name = "Mohsen",
+                        Bio = "Lorem Ipsum",
+                        Gender = UserGender.Male,
+                        PhoneNumber = "01233435345",
+                        Location = "Alexandria",
+                        Email = "Mohsen@69.com",
+                        UserType = UserType.Patient,
+                         Password ="Password",
+
+                    },
+                    new AppUser()
+                    {
+                        Name = "Farida",
+                        Bio = "Lorem Ipsum",
+                        Gender = UserGender.Female,
+                        PhoneNumber = "01233435345",
+                        Location = "Alexandria",
+                        Email = "Mohsen@69.com",
+                        UserType = UserType.Patient,
+                         Password ="Password",
+
                     }
 
                 };
-                dataContext.Patients.AddRange(patients);
+                dataContext.AppUsers.AddRange(patients);
+                dataContext.SaveChanges();
             }
-            //if (!dataContext.Doctors.Any()) {
-            //    var doctors = new List<Doctor>()
-            //    {
-            //        new Doctor()
-            //        {
-            //            Name = "Mohsen",
-            //            Bio = "Lorem Ipsum",
-            //            Gender = true,
-            //            PhoneNumber = "01233435345",
-            //            Location = "Alexandria",
-            //            Email = "Mohsen@69.com",
-            //            Role = false,
 
-            //        },
-            //        new Doctor()
-            //        {
-            //            Name = "Farida",
-            //            Bio = "Lorem Ipsum",
-            //            Gender = false,
-            //            PhoneNumber = "01233435345",
-            //            Location = "Alexandria",
-            //            Email = "Mohsen@69.com",
-            //            Role = false,
-            //        }
-            //    };
-            //    dataContext.Doctors.AddRange(doctors);
-            //}
             if (!dataContext.Appointments.Any())
             {
                 var appointments = new List<Appointment>()
                 {
-                    new Appointment() {PatientId = 13, DoctorId = 5, Start = DateTime.Now.AddDays(2), Duration = TimeSpan.FromMinutes(30)},
-                    new Appointment() {PatientId = 14, DoctorId = 5, Start = DateTime.Now.AddDays(2).AddMinutes(30), Duration = TimeSpan.FromMinutes(30)},
-                    new Appointment() {PatientId = 15, DoctorId = 6, Start = DateTime.Now, Duration = TimeSpan.FromMinutes(30)},
-                    //new Appointment() {PatientId = 16, DoctorId = 6, Start = DateTime.Now.AddMinutes(30), Duration = TimeSpan.FromMinutes(30)}
+                    new Appointment() {PatientId = 20, DoctorId = 23, Start = DateTime.Now.AddDays(1), Duration = TimeSpan.FromMinutes(30)},
+                    new Appointment() {PatientId = 21, DoctorId = 23, Start = DateTime.Now.AddDays(2).AddMinutes(30), Duration = TimeSpan.FromMinutes(30)},
+                    new Appointment() {PatientId = 22, DoctorId = 23, Start = DateTime.Now, Duration = TimeSpan.FromMinutes(30)},
+
+                    new Appointment() {PatientId = 20, DoctorId = 23, Start = DateTime.Now.AddDays(2), Duration = TimeSpan.FromMinutes(30)},
+                    new Appointment() {PatientId = 21, DoctorId = 23, Start = DateTime.Now.AddDays(1).AddMinutes(30), Duration = TimeSpan.FromMinutes(30)},
+                    new Appointment() {PatientId = 22, DoctorId = 23, Start = DateTime.Now, Duration = TimeSpan.FromMinutes(30)},
+
+                    new Appointment() {PatientId = 20, DoctorId = 24, Start = DateTime.Now.AddDays(2), Duration = TimeSpan.FromMinutes(30)},
+                    new Appointment() {PatientId = 21, DoctorId = 24, Start = DateTime.Now.AddDays(2).AddMinutes(30), Duration = TimeSpan.FromMinutes(30)},
+                    new Appointment() {PatientId = 22, DoctorId = 24, Start = DateTime.Now, Duration = TimeSpan.FromMinutes(30)},
+
+                    new Appointment() {PatientId = 20, DoctorId = 24, Start = DateTime.Now.AddDays(2), Duration = TimeSpan.FromMinutes(30)},
+                    new Appointment() {PatientId = 21, DoctorId = 24, Start = DateTime.Now.AddDays(2).AddMinutes(30), Duration = TimeSpan.FromMinutes(30)},
+                    new Appointment() {PatientId = 22, DoctorId = 24, Start = DateTime.Now, Duration = TimeSpan.FromMinutes(30)},
+
+                    new Appointment() {PatientId = 20, DoctorId = 25, Start = DateTime.Now.AddDays(2), Duration = TimeSpan.FromMinutes(30)},
+                    new Appointment() {PatientId = 21, DoctorId = 25, Start = DateTime.Now.AddDays(2).AddMinutes(30), Duration = TimeSpan.FromMinutes(30)},
+                    new Appointment() {PatientId = 22, DoctorId = 25, Start = DateTime.Now, Duration = TimeSpan.FromMinutes(30)},
+
+                    new Appointment() {PatientId = 20, DoctorId = 24, Start = DateTime.Now.AddDays(2), Duration = TimeSpan.FromMinutes(30)},
+                    new Appointment() {PatientId = 21, DoctorId = 24, Start = DateTime.Now.AddDays(2).AddMinutes(30), Duration = TimeSpan.FromMinutes(30)},
+                    new Appointment() {PatientId = 22, DoctorId = 24, Start = DateTime.Now, Duration = TimeSpan.FromMinutes(30)},
+
+                    new Appointment() {PatientId = 20, DoctorId = 23, Start = DateTime.Now.AddDays(2), Duration = TimeSpan.FromMinutes(30)},
+                    new Appointment() {PatientId = 21, DoctorId = 24, Start = DateTime.Now.AddDays(2).AddMinutes(30), Duration = TimeSpan.FromMinutes(30)},
+                    new Appointment() {PatientId = 22, DoctorId = 25, Start = DateTime.Now, Duration = TimeSpan.FromMinutes(30)},
+
+                    new Appointment() {PatientId = 20, DoctorId = 23, Start = DateTime.Now.AddDays(2), Duration = TimeSpan.FromMinutes(30)},
+                    new Appointment() {PatientId = 21, DoctorId = 24, Start = DateTime.Now.AddDays(2).AddMinutes(30), Duration = TimeSpan.FromMinutes(30)},
+                    new Appointment() {PatientId = 22, DoctorId = 25, Start = DateTime.Now, Duration = TimeSpan.FromMinutes(30)}
                 };
                 dataContext.Appointments.AddRange(appointments);
+                dataContext.SaveChanges();
             }
-            dataContext.SaveChanges();
         }
     }
 }

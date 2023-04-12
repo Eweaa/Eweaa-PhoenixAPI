@@ -10,8 +10,8 @@ namespace PhoenixAPI3.Controllers
     [ApiController]
     public class AppointmentController : Controller
     {
-        private readonly IAppointment _appointment;
-        public AppointmentController(IAppointment appointment)
+        private readonly IAppointmentRepo _appointment;
+        public AppointmentController(IAppointmentRepo appointment)
         {
             _appointment = appointment;
         }
@@ -20,15 +20,15 @@ namespace PhoenixAPI3.Controllers
         [ProducesResponseType(200, Type = typeof(IEnumerable<Appointment>))]
         public IActionResult GetAllAppointmentsByDoctor(int Id)
         {
-            var appointments = _appointment.GetAllAppointmentsByDoctor(Id);
+            var appointments = _appointment.GetAllAppointmentsByDoctorId(Id);
             return Ok(appointments);
         }
-        
+
         [HttpGet]
         [ProducesResponseType(200, Type = typeof(IEnumerable<Appointment>))]
         public IActionResult GetAllAppointmentsByPatient(int Id)
         {
-            var appointments = _appointment.GetAllAppointmentsByPatient(Id);
+            var appointments = _appointment.GetAllAppointmentsByPatientId(Id);
             return Ok(appointments);
         }
 

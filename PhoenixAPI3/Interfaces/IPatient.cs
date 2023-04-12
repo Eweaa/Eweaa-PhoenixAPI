@@ -2,13 +2,13 @@
 
 namespace PhoenixAPI3.Interfaces
 {
-    public interface IPatient
+    public interface IPatientRepo
     {
-        ICollection<Patient> GetPatients();
+        ICollection<AppUser> GetPatients();
         //ICollection<Doctor> GetDoctors();
-        Patient GetPatient(int id);
+        AppUser GetPatient(int id);
         bool PatientExists(int id);
-        bool CreatePatient(Patient patient);
+        bool CreatePatient(AppUser patient);
         bool Save();
     }
 }

@@ -75,9 +75,9 @@ builder.Services.AddControllers().AddJsonOptions(x => x.JsonSerializerOptions.Re
 builder.Services.AddTransient<Seed>();
 
 
-builder.Services.AddScoped<IPatient, PatientRepo>();
-//builder.Services.AddScoped<IDoctor, DoctorRepo>();
-builder.Services.AddScoped<IAppointment, AppointmentRepo>();
+builder.Services.AddScoped<IPatientRepo, PatientRepo>();
+builder.Services.AddScoped<IDoctorRepo, DoctorRepo>();
+builder.Services.AddScoped<IAppointmentRepo, AppointmentRepo>();
 
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
@@ -91,7 +91,7 @@ var app = builder.Build();
 
 #region
 //if (args.Length == 1 && args[0].ToLower() == "seeddata")
-    SeedData(app);
+SeedData(app);
 void SeedData(IHost app)
 {
     var scopedFactory = app.Services.GetService<IServiceScopeFactory>();

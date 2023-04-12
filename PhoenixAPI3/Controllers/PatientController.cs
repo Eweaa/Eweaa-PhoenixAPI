@@ -9,14 +9,14 @@ namespace PhoenixAPI3.Controllers
     [ApiController]
     public class PatientController : Controller
     {
-        private readonly IPatient _patient;
-        public PatientController(IPatient patient)
+        private readonly IPatientRepo _patient;
+        public PatientController(IPatientRepo patient)
         {
             _patient = patient;
         }
 
         [HttpGet]
-        [ProducesResponseType(200, Type = typeof(IEnumerable<Patient>))]
+        [ProducesResponseType(200, Type = typeof(IEnumerable<AppUser>))]
         public IActionResult GetPatients()
         {
             var patients = _patient.GetPatients();
@@ -24,7 +24,7 @@ namespace PhoenixAPI3.Controllers
         }
 
         [HttpGet("{Id}")]
-        [ProducesResponseType(200, Type = typeof(IEnumerable<Patient>))]
+        [ProducesResponseType(200, Type = typeof(IEnumerable<AppUser>))]
         [ProducesResponseType(400)]
         public IActionResult GetPatient(int Id)
         {
@@ -35,7 +35,7 @@ namespace PhoenixAPI3.Controllers
         [HttpPost]
         [ProducesResponseType(204)]
         [ProducesResponseType(400)]
-        public IActionResult CreatePatient(Patient patient)
+        public IActionResult CreatePatient(AppUser patient)
         {
             if (patient == null)
                 return BadRequest(ModelState);
