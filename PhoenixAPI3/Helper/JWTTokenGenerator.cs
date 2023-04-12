@@ -16,12 +16,10 @@ namespace PhoenixAPI3.Helper
             var credentials = new SigningCredentials(securityKey, SecurityAlgorithms.HmacSha256);
             var token = new JwtSecurityToken(
                             claims: claims,
-                            expires: DateTime.Now.AddMinutes(1),
+                            expires: DateTime.Now.AddMinutes(90),
                             signingCredentials: credentials
-
                         );
             return new JwtSecurityTokenHandler().WriteToken(token);
         }
-
     }
 }

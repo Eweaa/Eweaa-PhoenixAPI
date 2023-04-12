@@ -20,7 +20,4 @@ public class DataContext : DbContext
          .WithOne(e => e.Patient).OnDelete(DeleteBehavior.ClientSetNull);
         base.OnModelCreating(modelBuilder);
     }
-
-
-
 }

@@ -1,12 +1,8 @@
-﻿using PhoenixAPI3.Models;
-
-namespace PhoenixAPI3.ViewModels
+﻿namespace PhoenixAPI3.ViewModels;
+public class PatientAppointmentVM
 {
-    public class PatientAppointmentVM
-    {
-        public long Id { get; set; }
-        public string Name { get; set; }
-        public UserGender Gender { get; set; }
-        public DateTime Start { get; set; }
-    }
+    public long Id { get; set; }
+    public required string DoctorName { get; set; }
+    public required string DoctorLocation { get; set; }
+    public DateTime Start { get; set; }
 }

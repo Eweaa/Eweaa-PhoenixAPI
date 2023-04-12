@@ -4,7 +4,7 @@ namespace PhoenixAPI3.Interfaces;
 public interface IDoctorRepo
 {
     ICollection<AppUser> GetDoctors();
-    AppUser GetDoctor(int Id);
+    AppUser? GetDoctor(int Id);
     bool DoctorExists(int Id);
     bool CreateDoctor(AppUser Doctor);
     bool Save();

@@ -20,7 +20,7 @@ public class DoctorRepo : IDoctorRepo
 
     public bool DoctorExists(int Id) => _context.AppUsers.Any(D => D.Id == Id);
 
-    public AppUser GetDoctor(int Id) => _context.AppUsers.Where(D => D.Id == Id).Include(D => D.DoctorAppointments).FirstOrDefault();
+    public AppUser? GetDoctor(int Id) => _context.AppUsers.Where(D => D.Id == Id).Include(D => D.DoctorAppointments).FirstOrDefault();
 
     public ICollection<AppUser> GetDoctors() => _context.AppUsers.Include(D => D.DoctorAppointments).ToList();
     public bool Save()
