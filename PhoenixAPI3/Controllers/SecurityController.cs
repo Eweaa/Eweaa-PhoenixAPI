@@ -1,7 +1,6 @@
 ﻿using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using PhoenixAPI3.Helper;
-using PhoenixAPI3.Models;
 
 namespace PhoenixAPI3.Controllers;
 [Route("api/[controller]/[action]")]

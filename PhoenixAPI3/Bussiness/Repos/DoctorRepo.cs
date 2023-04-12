@@ -1,9 +1,9 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using PhoenixAPI3.Bussiness.Interfaces;
+using PhoenixAPI3.Business.Interfaces;
 using PhoenixAPI3.Data;
-using PhoenixAPI3.Models;
+using PhoenixAPI3.Data.Models;
 
-namespace PhoenixAPI3.Bussiness.Repos;
+namespace PhoenixAPI3.Business.Repos;
 public class DoctorRepo : IDoctorRepo
 {
     private readonly DataContext _context;

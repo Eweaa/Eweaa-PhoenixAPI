@@ -1,10 +1,10 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using PhoenixAPI3.Bussiness.Interfaces;
+using PhoenixAPI3.Business.Interfaces;
+using PhoenixAPI3.Business.ViewModels;
 using PhoenixAPI3.Data;
-using PhoenixAPI3.Models;
-using PhoenixAPI3.ViewModels;
+using PhoenixAPI3.Data.Models;
 
-namespace PhoenixAPI3.Bussiness.Repos;
+namespace PhoenixAPI3.Business.Repos;
 public class AppointmentRepo : IAppointmentRepo
 {
     private readonly DataContext _context;
@@ -19,7 +19,7 @@ public class AppointmentRepo : IAppointmentRepo
             Id = S.Id,
             PatientName = S.Patient.Name,
             PatientGender = S.Patient.Gender,
-            Start = S.Start
+            Start = S.StartedAt
         }).ToList();
 
     public ICollection<PatientAppointmentVM> GetAllAppointmentsByPatientId(int Id) => _context.Appointments
@@ -30,7 +30,7 @@ public class AppointmentRepo : IAppointmentRepo
                     DoctorLocation = x.Doctor.Location,
                     DoctorName = x.Doctor.Name,
                     Id = x.Id,
-                    Start = x.Start
+                    Start = x.StartedAt
                 }
         ).ToList();
 

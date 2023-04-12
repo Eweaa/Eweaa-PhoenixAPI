@@ -1,4 +1,4 @@
-﻿namespace PhoenixAPI3.Bussiness.ViewModels;
+﻿namespace PhoenixAPI3.Business.ViewModels;
 public class PatientAppointmentVM
 {
     public long Id { get; set; }

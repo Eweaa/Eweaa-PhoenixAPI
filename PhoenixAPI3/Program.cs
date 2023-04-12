@@ -3,9 +3,9 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
 using PhoenixAPI3;
+using PhoenixAPI3.Business.Interfaces;
+using PhoenixAPI3.Business.Repos;
 using PhoenixAPI3.Data;
-using PhoenixAPI3.Interfaces;
-using PhoenixAPI3.Repos;
 using System.Text;
 using System.Text.Json.Serialization;
 

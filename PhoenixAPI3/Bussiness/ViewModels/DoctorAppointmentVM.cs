@@ -1,6 +1,6 @@
-﻿using PhoenixAPI3.Models;
+﻿using PhoenixAPI3.Data.Models;
 
-namespace PhoenixAPI3.Bussiness.ViewModels
+namespace PhoenixAPI3.Business.ViewModels
 {
     public class DoctorAppointmentVM
     {

@@ -1,9 +1,9 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using PhoenixAPI3.Bussiness.Interfaces;
+using PhoenixAPI3.Business.Interfaces;
 using PhoenixAPI3.Data;
-using PhoenixAPI3.Models;
+using PhoenixAPI3.Data.Models;
 
-namespace PhoenixAPI3.Bussiness.Repos;
+namespace PhoenixAPI3.Business.Repos;
 
 public class PatientRepo : IPatientRepo
 {
@@ -14,11 +14,9 @@ public class PatientRepo : IPatientRepo
     }
     public ICollection<AppUser> GetPatients() => _context.AppUsers.Include(P => P.PatientAppointments).ToList();
 
-    //public ICollection<Doctor> GetDoctors() => _context.Doctors.ToList();
-
     public bool PatientExists(int id) => _context.AppUsers.Any(p => p.Id == id);
 
-    public AppUser GetPatient(int id) => _context.AppUsers.Where(P => P.Id == id).Include(P => P.PatientAppointments).FirstOrDefault();
+    public AppUser? GetPatient(int id) => _context.AppUsers.Where(P => P.Id == id).Include(P => P.PatientAppointments).FirstOrDefault();
     public bool CreatePatient(AppUser patient)
     {
         _context.AppUsers.Add(patient);

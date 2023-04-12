@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using PhoenixAPI3.Interfaces;
-using PhoenixAPI3.Models;
+using PhoenixAPI3.Business.Interfaces;
+using PhoenixAPI3.Data.Models;
 
 namespace PhoenixAPI3.Controllers;
 [Route("api/[controller]")]
