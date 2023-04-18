@@ -94,37 +94,37 @@ namespace PhoenixAPI3
             {
                 var appointments = new List<Appointment>()
                 {
-                    new Appointment() {PatientId = 20, DoctorId = 23, StartedAt = DateTime.Now.AddDays(1), Duration = TimeSpan.FromMinutes(30)},
-                    new Appointment() {PatientId = 21, DoctorId = 23, StartedAt = DateTime.Now.AddDays(2).AddMinutes(30), Duration = TimeSpan.FromMinutes(30)},
-                    new Appointment() {PatientId = 22, DoctorId = 23, StartedAt = DateTime.Now, Duration = TimeSpan.FromMinutes(30)},
+                    new Appointment() {PatientId = 1, DoctorId = 4, StartedAt = DateTime.Now.AddDays(1), Duration = TimeSpan.FromMinutes(30)},
+                    new Appointment() {PatientId = 2, DoctorId = 4, StartedAt = DateTime.Now.AddDays(2).AddMinutes(30), Duration = TimeSpan.FromMinutes(30)},
+                    new Appointment() {PatientId = 3, DoctorId = 4, StartedAt = DateTime.Now, Duration = TimeSpan.FromMinutes(30)},
 
-                    new Appointment() {PatientId = 20, DoctorId = 23, StartedAt = DateTime.Now.AddDays(2), Duration = TimeSpan.FromMinutes(30)},
-                    new Appointment() {PatientId = 21, DoctorId = 23, StartedAt = DateTime.Now.AddDays(1).AddMinutes(30), Duration = TimeSpan.FromMinutes(30)},
-                    new Appointment() {PatientId = 22, DoctorId = 23, StartedAt = DateTime.Now, Duration = TimeSpan.FromMinutes(30)},
+                    new Appointment() {PatientId = 1, DoctorId = 4, StartedAt = DateTime.Now.AddDays(2), Duration = TimeSpan.FromMinutes(30)},
+                    new Appointment() {PatientId = 2, DoctorId = 4, StartedAt = DateTime.Now.AddDays(1).AddMinutes(30), Duration = TimeSpan.FromMinutes(30)},
+                    new Appointment() {PatientId = 3, DoctorId = 4, StartedAt = DateTime.Now, Duration = TimeSpan.FromMinutes(30)},
 
-                    new Appointment() {PatientId = 20, DoctorId = 24, StartedAt = DateTime.Now.AddDays(2), Duration = TimeSpan.FromMinutes(30)},
-                    new Appointment() {PatientId = 21, DoctorId = 24, StartedAt = DateTime.Now.AddDays(2).AddMinutes(30), Duration = TimeSpan.FromMinutes(30)},
-                    new Appointment() {PatientId = 22, DoctorId = 24, StartedAt = DateTime.Now, Duration = TimeSpan.FromMinutes(30)},
+                    new Appointment() {PatientId = 1, DoctorId = 5, StartedAt = DateTime.Now.AddDays(2), Duration = TimeSpan.FromMinutes(30)},
+                    new Appointment() {PatientId = 2, DoctorId = 5, StartedAt = DateTime.Now.AddDays(2).AddMinutes(30), Duration = TimeSpan.FromMinutes(30)},
+                    new Appointment() {PatientId = 3, DoctorId = 5, StartedAt = DateTime.Now, Duration = TimeSpan.FromMinutes(30)},
 
-                    new Appointment() {PatientId = 20, DoctorId = 24, StartedAt = DateTime.Now.AddDays(2), Duration = TimeSpan.FromMinutes(30)},
-                    new Appointment() {PatientId = 21, DoctorId = 24, StartedAt = DateTime.Now.AddDays(2).AddMinutes(30), Duration = TimeSpan.FromMinutes(30)},
-                    new Appointment() {PatientId = 22, DoctorId = 24, StartedAt = DateTime.Now, Duration = TimeSpan.FromMinutes(30)},
+                    new Appointment() {PatientId = 1, DoctorId = 5, StartedAt = DateTime.Now.AddDays(2), Duration = TimeSpan.FromMinutes(30)},
+                    new Appointment() {PatientId = 2, DoctorId = 5, StartedAt = DateTime.Now.AddDays(2).AddMinutes(30), Duration = TimeSpan.FromMinutes(30)},
+                    new Appointment() {PatientId = 3, DoctorId = 5, StartedAt = DateTime.Now, Duration = TimeSpan.FromMinutes(30)},
 
-                    new Appointment() {PatientId = 20, DoctorId = 25, StartedAt = DateTime.Now.AddDays(2), Duration = TimeSpan.FromMinutes(30)},
-                    new Appointment() {PatientId = 21, DoctorId = 25, StartedAt = DateTime.Now.AddDays(2).AddMinutes(30), Duration = TimeSpan.FromMinutes(30)},
-                    new Appointment() {PatientId = 22, DoctorId = 25, StartedAt = DateTime.Now, Duration = TimeSpan.FromMinutes(30)},
+                    new Appointment() {PatientId = 1, DoctorId = 6, StartedAt = DateTime.Now.AddDays(2), Duration = TimeSpan.FromMinutes(30)},
+                    new Appointment() {PatientId = 2, DoctorId = 6, StartedAt = DateTime.Now.AddDays(2).AddMinutes(30), Duration = TimeSpan.FromMinutes(30)},
+                    new Appointment() {PatientId = 3, DoctorId = 6, StartedAt = DateTime.Now, Duration = TimeSpan.FromMinutes(30)},
 
-                    new Appointment() {PatientId = 20, DoctorId = 24, StartedAt = DateTime.Now.AddDays(2), Duration = TimeSpan.FromMinutes(30)},
-                    new Appointment() {PatientId = 21, DoctorId = 24, StartedAt = DateTime.Now.AddDays(2).AddMinutes(30), Duration = TimeSpan.FromMinutes(30)},
-                    new Appointment() {PatientId = 22, DoctorId = 24, StartedAt = DateTime.Now, Duration = TimeSpan.FromMinutes(30)},
+                    new Appointment() {PatientId = 1, DoctorId = 5, StartedAt = DateTime.Now.AddDays(2), Duration = TimeSpan.FromMinutes(30)},
+                    new Appointment() {PatientId = 2, DoctorId = 5, StartedAt = DateTime.Now.AddDays(2).AddMinutes(30), Duration = TimeSpan.FromMinutes(30)},
+                    new Appointment() {PatientId = 3, DoctorId = 5, StartedAt = DateTime.Now, Duration = TimeSpan.FromMinutes(30)},
 
-                    new Appointment() {PatientId = 20, DoctorId = 23, StartedAt = DateTime.Now.AddDays(2), Duration = TimeSpan.FromMinutes(30)},
-                    new Appointment() {PatientId = 21, DoctorId = 24, StartedAt = DateTime.Now.AddDays(2).AddMinutes(30), Duration = TimeSpan.FromMinutes(30)},
-                    new Appointment() {PatientId = 22, DoctorId = 25, StartedAt = DateTime.Now, Duration = TimeSpan.FromMinutes(30)},
+                    new Appointment() {PatientId = 1, DoctorId = 4, StartedAt = DateTime.Now.AddDays(2), Duration = TimeSpan.FromMinutes(30)},
+                    new Appointment() {PatientId = 2, DoctorId = 5, StartedAt = DateTime.Now.AddDays(2).AddMinutes(30), Duration = TimeSpan.FromMinutes(30)},
+                    new Appointment() {PatientId = 3, DoctorId = 6, StartedAt = DateTime.Now, Duration = TimeSpan.FromMinutes(30)},
 
-                    new Appointment() {PatientId = 20, DoctorId = 23, StartedAt = DateTime.Now.AddDays(2), Duration = TimeSpan.FromMinutes(30)},
-                    new Appointment() {PatientId = 21, DoctorId = 24, StartedAt = DateTime.Now.AddDays(2).AddMinutes(30), Duration = TimeSpan.FromMinutes(30)},
-                    new Appointment() {PatientId = 22, DoctorId = 25, StartedAt = DateTime.Now, Duration = TimeSpan.FromMinutes(30)}
+                    new Appointment() {PatientId = 1, DoctorId = 4, StartedAt = DateTime.Now.AddDays(2), Duration = TimeSpan.FromMinutes(30)},
+                    new Appointment() {PatientId = 2, DoctorId = 5, StartedAt = DateTime.Now.AddDays(2).AddMinutes(30), Duration = TimeSpan.FromMinutes(30)},
+                    new Appointment() {PatientId = 3, DoctorId = 6, StartedAt = DateTime.Now, Duration = TimeSpan.FromMinutes(30)}
                 };
                 dataContext.Appointments.AddRange(appointments);
                 dataContext.SaveChanges();
